@@ -6,7 +6,7 @@ from .models import Product
 def all_products(request):
     """ A view to show all products, including sortng and search queries """
 
-    products = Products.objects.all()
+    products = Product.objects.all()
 
     context = {
         'products': products,
